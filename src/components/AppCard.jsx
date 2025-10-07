@@ -16,7 +16,7 @@ const AppCard = ({ app }) => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-center">{title}</h2>
+        <h2 className="card-title text-center font-semibold xl:text-lg lg:text-base">{title}</h2>
       </div>
 
       <div className="flex justify-between items-center">
