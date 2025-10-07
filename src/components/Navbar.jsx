@@ -36,7 +36,7 @@ const Navbar = () => {
         {/* Center: Large Screen Navigation */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-6">
-            <NavLinkLists />
+            <NavLinkLists variant="gradient" />
           </ul>
         </div>
 
