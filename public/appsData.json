@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/wNp3DKyj/EduPlay.png",
+    "title": "EduPlay: Kids Learning Hub",
+    "companyName": "BrightEdu Labs",
+    "id": 1,
+    "description": "EduPlay makes learning fun for children with colorful games, stories, and quizzes designed by educators. It covers math, science, and language in an interactive format that encourages creativity and curiosity. Parents can monitor progress through detailed reports and achievements. Safe and ad-free, EduPlay ensures a secure environment for kids to learn independently. With offline lessons, multilingual support, and new weekly content, EduPlay keeps children engaged and motivated to learn new skills every day.",
+    "size": 89,
+    "reviews": 13600,
+    "ratingAvg": 4.9,
+    "downloads": 3400000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 9880 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ZRSrBNZ0/Streamly.png",
+    "title": "Streamly: Music & Podcasts",
+    "companyName": "AudioVerse Inc.",
+    "id": 2,
+    "description": "Streamly gives you access to millions of songs and podcasts with personalized playlists and radio stations. Discover trending artists or explore by mood, genre, or era. Offline playback, equalizer settings, and smart recommendations ensure an unmatched listening experience. The app syncs across all devices, allowing seamless transitions between mobile and desktop. With a vibrant interface and AI-curated content, Streamly redefines how you enjoy music every day.",
+    "size": 102,
+    "reviews": 29800,
+    "ratingAvg": 4.6,
+    "downloads": 7800000,
+    "ratings": [
+      { "name": "1 star", "count": 530 },
+      { "name": "2 star", "count": 840 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 5900 },
+      { "name": "5 star", "count": 20980 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/S4jpRzRd/Artify.png",
+    "title": "Artify: Digital Drawing Studio",
+    "companyName": "CreativeCanvas Co.",
+    "id": 3,
+    "description": "Artify is a professional-grade digital drawing and painting studio made for artists and designers. It offers brushes, layers, and blending tools for realistic artwork creation. The app supports stylus pressure sensitivity, cloud sync, and export to PSD formats. Beginners can use tutorials and templates to get started. Whether sketching concepts or creating detailed illustrations, Artify provides the freedom and precision you need. Optimized for performance, it delivers smooth strokes and infinite creativity.",
+    "size": 118,
+    "reviews": 16400,
+    "ratingAvg": 4.7,
+    "downloads": 4100000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 390 },
+      { "name": "3 star", "count": 990 },
+      { "name": "4 star", "count": 3300 },
+      { "name": "5 star", "count": 11480 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/0yHjttbf/PetPal.png",
+    "title": "PetPal: Pet Care Companion",
+    "companyName": "HappyTail Studios",
+    "id": 4,
+    "description": "PetPal helps pet owners manage their pets' health, nutrition, and activities effortlessly. Track vaccination schedules, vet appointments, and daily feeding routines. The app provides expert care tips and connects you with nearby vets and pet stores. Share adorable pet moments with the community and find advice from professionals. With reminders, personalized health records, and smart notifications, PetPal ensures your furry friends are always healthy and happy.",
+    "size": 72,
+    "reviews": 7400,
+    "ratingAvg": 4.6,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 720 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 3540 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/r2TzWZnH/Weather-View.png",
+    "title": "WeatherView: Live Forecast",
+    "companyName": "SkyAlert Systems",
+    "id": 5,
+    "description": "WeatherView provides real-time weather updates, radar maps, and hourly forecasts with stunning visuals. You can view accurate predictions for any location worldwide and receive alerts for storms, rain, and temperature changes. The app offers widgets, live radar tracking, and air quality reports. Its clean design and precise data make it ideal for everyday use. Whether you're planning travel, outdoor work, or daily commutes, WeatherView ensures you're always prepared for changing weather conditions anywhere you go.",
+    "size": 63,
+    "reviews": 12200,
+    "ratingAvg": 4.7,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 9800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Wp5yMRhd/Mind-Bloom.png",
+    "title": "MindBloom: Habit Builder",
+    "companyName": "FocusSoft Ltd.",
+    "id": 6,
+    "description": "MindBloom helps you build positive habits and track personal growth effortlessly. Set daily goals, reminders, and streak challenges to stay consistent. Its habit visualization charts show your progress clearly. The app offers motivational quotes, customizable themes, and analytics for reflection. Whether you're developing fitness routines, reading habits, or mindfulness practices, MindBloom keeps you accountable. Backed by behavioral psychology, it ensures steady improvement and helps turn small actions into lasting habits.",
+    "size": 47,
+    "reviews": 11200,
+    "ratingAvg": 4.8,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 270 },
+      { "name": "3 star", "count": 650 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 7550 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/2YgVfbc6/PhotoPix.png",
+    "title": "PhotoPix: AI Photo Editor",
+    "companyName": "PixelCraft Studio",
+    "id": 7,
+    "description": "PhotoPix offers a professional photo editing experience with AI-powered filters, retouch tools, and background removers. Edit portraits, enhance landscapes, and apply stunning effects effortlessly. Its smart auto-enhance tool adjusts lighting and colors automatically. With layers, stickers, and text overlays, you can design creative content easily. PhotoPix supports RAW files and exports in high resolution. Built for creators, influencers, and photographers, it delivers fast, smooth performance and a clean design that inspires creativity every day.",
+    "size": 104,
+    "reviews": 19800,
+    "ratingAvg": 4.6,
+    "downloads": 4900000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 510 },
+      { "name": "3 star", "count": 1210 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 11460 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/SDt70Ytx/TravelGo.png",
+    "title": "TravelGo: Trip Planner",
+    "companyName": "SkyBound Technologies",
+    "id": 8,
+    "description": "TravelGo makes planning your trips effortless. Create personalized itineraries, find top-rated destinations, and book hotels, flights, and local tours in one place. The app uses AI to recommend destinations based on your interests and budget. Offline maps, local guides, and cultural tips make exploring stress-free. You can also share your travel plans with friends and receive real-time weather updates. TravelGo transforms the way you plan and enjoy travel, ensuring a seamless and memorable experience every time.",
+    "size": 85,
+    "reviews": 12600,
+    "ratingAvg": 4.6,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 260 },
+      { "name": "2 star", "count": 440 },
+      { "name": "3 star", "count": 980 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 9120 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hF387CCY/Focus-Flow.png",
+    "title": "FocusFlow: Productivity Timer",
+    "companyName": "MindSync Labs",
+    "id": 9,
+    "description": "FocusFlow helps you stay productive using the Pomodoro technique, allowing you to manage work and rest intervals effectively. With clean UI, task tracking, and real-time analytics, FocusFlow ensures maximum concentration with minimal burnout. You can customize timer durations, track focus sessions, and review performance trends. It includes relaxing background sounds and widgets to start sessions quickly. Ideal for students, professionals, and creators who want to improve productivity habits. Sync data across devices and analyze your weekly focus reports for continuous improvement.",
+    "size": 52,
+    "reviews": 12640,
+    "ratingAvg": 4.7,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 860 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 9950 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/pB9XQRJ0/MealMate.png",
+    "title": "MealMate: Healthy Recipe Finder",
+    "companyName": "NutriTech Studios",
+    "id": 10,
+    "description": "MealMate helps you discover healthy, delicious recipes tailored to your preferences and dietary needs. Whether you're vegan, keto, or simply health-conscious, MealMate suggests meals based on your goals and ingredients you have at home. With detailed nutritional info, calorie tracking, and weekly meal plans, it makes healthy eating simple. The built-in grocery list generator and voice assistant make shopping easy. You can also save favorites, rate recipes, and share meal plans with friends. Perfect for anyone aiming for balanced nutrition.",
+    "size": 78,
+    "reviews": 9870,
+    "ratingAvg": 4.5,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 510 },
+      { "name": "3 star", "count": 940 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 5320 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tMRCcM9q/FitTrack.png",
+    "title": "FitTrack Pro: Fitness & Steps",
+    "companyName": "ActiveNow Inc.",
+    "id": 11,
+    "description": "FitTrack Pro is your all-in-one fitness companion that helps you stay active and monitor your progress effortlessly. It tracks steps, calories burned, distance, heart rate, and workout performance using advanced sensors and GPS. You can set daily goals, join challenges, and compete with friends. Personalized fitness insights and reminders keep you consistent with your fitness journey. The app integrates with popular wearables and supports offline mode. Designed for all fitness levels, FitTrack Pro motivates you to stay healthy and reach your goals faster.",
+    "size": 65,
+    "reviews": 20560,
+    "ratingAvg": 4.6,
+    "downloads": 3900000,
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 880 },
+      { "name": "3 star", "count": 1450 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 12410 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/1tJmdmvk/Learn-Ease.png",
+    "title": "LearnEase: Language Tutor",
+    "companyName": "GlobalEdu Apps",
+    "id": 12,
+    "description": "LearnEase makes language learning simple and enjoyable through interactive lessons, gamified challenges, and AI-powered pronunciation feedback. You can learn over 25 languages including Spanish, Japanese, and French. The app's adaptive algorithm personalizes lessons based on your progress. With real-world conversations, quizzes, and culture-based tips, you'll gain confidence quickly. Offline lessons, daily streaks, and badges keep you motivated. Perfect for travelers, students, and professionals who want to learn at their own pace and track improvement easily.",
+    "size": 88,
+    "reviews": 17600,
+    "ratingAvg": 4.8,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 370 },
+      { "name": "3 star", "count": 980 },
+      { "name": "4 star", "count": 3300 },
+      { "name": "5 star", "count": 12740 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/0j5YgHLs/Budget-Wise.png",
+    "title": "BudgetWise: Expense Tracker",
+    "companyName": "FinSmart Digital",
+    "id": 13,
+    "description": "BudgetWise helps you take full control of your finances with intuitive budgeting tools and real-time expense tracking. Automatically categorize your spending, set monthly goals, and visualize your savings through interactive charts. The app syncs with your bank accounts securely and provides smart insights to help you spend wisely. You can export reports, set bill reminders, and receive alerts when nearing budget limits. Designed for simplicity, BudgetWise empowers you to make confident financial decisions and save more effortlessly.",
+    "size": 49,
+    "reviews": 8300,
+    "ratingAvg": 4.4,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 780 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 5310 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/xtdCKh9L/Calm-Space.png",
+    "title": "CalmSpace: Sleep & Relax",
+    "companyName": "MindEase Co.",
+    "id": 14,
+    "description": "CalmSpace helps you unwind, reduce stress, and improve your sleep with guided meditations, ambient sounds, and bedtime stories. Built with relaxation science, it adapts to your mood and recommends soundscapes that suit your emotional state. Features include breathing exercises, mindfulness sessions, and a gentle alarm clock. Track your sleep quality and see patterns over time. CalmSpace is your pocket therapist for maintaining calmness and balance in everyday life. It's beautifully designed to help you disconnect and rejuvenate easily.",
+    "size": 92,
+    "reviews": 15400,
+    "ratingAvg": 4.9,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 730 },
+      { "name": "4 star", "count": 3300 },
+      { "name": "5 star", "count": 10990 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/60YG7n9Z/NoteFlow.png",
+    "title": "NoteFlow: Smart Notes",
+    "companyName": "OrganizeMe Apps",
+    "id": 15,
+    "description": "NoteFlow is a modern note-taking app designed for efficiency and creativity. It lets you capture ideas, tasks, and reminders in a clean, organized interface. You can add images, voice recordings, and checklists to each note. Cloud sync ensures your notes are always available across devices. The app also supports tags, folders, and markdown formatting. With smart search and offline access, NoteFlow makes managing your thoughts simple and fast. Ideal for students, professionals, and writers who love simplicity and productivity.",
+    "size": 44,
+    "reviews": 9400,
+    "ratingAvg": 4.5,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 370 },
+      { "name": "3 star", "count": 820 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 5100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LDGkw5G4/Task-Buddy.png",
+    "title": "TaskBuddy: To-Do Organizer",
+    "companyName": "BrightTools",
+    "id": 16,
+    "description": "TaskBuddy helps you stay organized with intuitive task management features. Create to-do lists, set priorities, and schedule reminders with ease. The app syncs seamlessly across devices and supports team collaboration. Smart notifications and daily planning views help you stay on track. You can categorize tasks, attach files, and view productivity reports. TaskBuddy's minimalist interface makes planning simple, while its advanced features ensure nothing is forgotten. Perfect for professionals and students aiming to increase productivity daily.",
+    "size": 58,
+    "reviews": 7800,
+    "ratingAvg": 4.3,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 390 },
+      { "name": "2 star", "count": 520 },
+      { "name": "3 star", "count": 910 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 3480 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/s9QBhMYs/Readly.png",
+    "title": "Readly: E-Book Library",
+    "companyName": "BookVerse Media",
+    "id": 17,
+    "description": "Readly gives you unlimited access to thousands of e-books, audiobooks, and magazines in one beautiful app. Discover bestsellers, classics, and indie titles across genres. Sync progress across devices and listen offline. With personalized recommendations, adjustable fonts, and dark mode, reading feels natural anytime. Book clubs, highlights, and note features make learning interactive. Ideal for readers who love exploring new worlds, Readly transforms your device into a personal digital library.",
+    "size": 95,
+    "reviews": 17400,
+    "ratingAvg": 4.7,
+    "downloads": 4600000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 10780 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/jkqhWcYz/Secure-Vault.png",
+    "title": "SecureVault: Password Manager",
+    "companyName": "DataLock Systems",
+    "id": 18,
+    "description": "SecureVault protects your passwords, cards, and personal data using top-grade encryption. Easily store and autofill login credentials across apps and websites. Biometric authentication ensures only you can access your vault. You can generate strong passwords, organize them into categories, and sync securely across all devices. SecureVault also warns you of weak or reused passwords. With privacy-first architecture, your data never leaves your device. Simplify your digital life while keeping your accounts 100% safe.",
+    "size": 61,
+    "reviews": 9800,
+    "ratingAvg": 4.8,
+    "downloads": 2700000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 210 },
+      { "name": "3 star", "count": 580 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 8270 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zh0hnDbs/ShopEase.png",
+    "title": "ShopEase: Online Deals",
+    "companyName": "MarketHub Digital",
+    "id": 19,
+    "description": "ShopEase helps you find the best online deals, discounts, and exclusive coupons across thousands of stores. The app compares prices, tracks deliveries, and notifies you when your favorite products drop in price. Personalized shopping feeds and wishlists make it easy to manage purchases. ShopEase also includes cashback rewards and reviews from verified users. Safe payments and fast navigation make it the ultimate tool for smart shoppers everywhere.",
+    "size": 83,
+    "reviews": 21300,
+    "ratingAvg": 4.4,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 440 },
+      { "name": "2 star", "count": 670 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 12090 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/60d4zv0x/DriveLog.png",
+    "title": "DriveLog: Car Maintenance",
+    "companyName": "AutoTech Systems",
+    "id": 20,
+    "description": "DriveLog is a car maintenance tracker that helps you record services, fuel logs, and repair history. Get reminders for oil changes, tire rotations, and inspections. The app provides cost summaries, mileage analytics, and performance reports. Ideal for individual owners or fleet managers, DriveLog simplifies maintenance management. With cloud sync and exportable reports, you can access your vehicle's complete history anytime. Keep your car running smoothly and save money on unexpected repairs.",
+    "size": 69,
+    "reviews": 9100,
+    "ratingAvg": 4.5,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 340 },
+      { "name": "3 star", "count": 820 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 4630 }
+    ]
+  }
+]
