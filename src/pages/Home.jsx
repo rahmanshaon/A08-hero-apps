@@ -4,10 +4,33 @@ import AppCard from "../components/AppCard";
 import useApps from "../hooks/useApps";
 
 const Home = () => {
-  const {apps, loading, error} = useApps();
-//   console.log(data);
+  const { apps, loading, error } = useApps();
+  //   console.log(data);
   const featuredApps = apps.slice(0, 8);
-//   console.log(apps);
+  //   console.log(apps);
+
+  // Loading state
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-[60vh]">
+        <p className="text-lg text-gray-500 animate-pulse">
+          Loading trending apps...
+        </p>
+      </div>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="flex justify-center items-center h-[60vh]">
+        <p className="text-lg text-red-500">
+          Failed to load apps. Please try again later.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="text-center my-12">
