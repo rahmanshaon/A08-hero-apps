@@ -7,5 +7,5 @@ export const formatCompactNumber = (num) => {
     // Format number as thousands (K)
     return `${(num / 1_000).toFixed(0)}K`;
   }
-  return num.toString();
+  return num?.toString() || '0';
 };
