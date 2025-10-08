@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
 import { FaStar } from "react-icons/fa";
@@ -7,19 +7,23 @@ import { FiDownload } from "react-icons/fi";
 import { formatCompactNumber } from "../utils/formatters";
 import AppDetailsErrorPage from "./AppDetailsErrorPage";
 import ReviewChart from "../components/ReviewChart";
-import { toast } from "react-toastify";
+import { installApp, isAppInstalled } from "../utils/localStorage";
 
 const AppDetails = () => {
   const { id } = useParams();
   // console.log(id);
   const { apps, loading, error } = useApps();
+  const [installed, setInstalled] = useState(false);
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-96">
-        <p className="text-lg font-semibold text-gray-500">
-          Loading app details...
-        </p>
+      <div className="flex items-center justify-center min-h-[60vh]">
+        <div className="flex flex-col items-center gap-4">
+          <span className="loading loading-spinner loading-lg text-primary"></span>
+          <p className="text-gray-500 text-lg font-medium">
+            Loading app details...
+          </p>
+        </div>
       </div>
     );
   }
@@ -53,22 +57,11 @@ const AppDetails = () => {
     ratings,
   } = app || {};
 
-  const handleAddToInstallList = () => {
-    const existingList = JSON.parse(localStorage.getItem("appList"));
-    // console.log(existingList);
-    let updatedList = [];
-    if (existingList) {
-      const isDuplicate = existingList.some((a) => a.id === app.id);
-      if (isDuplicate) {
-        toast.warning("This app is already installed!");
-        return;
-      }
-      updatedList = [...existingList, app];
-    } else {
-      updatedList.push(app);
-    }
-    localStorage.setItem("appList", JSON.stringify(updatedList));
-    toast.success("App installed successfully");
+  const alreadyInstalled = isAppInstalled(app.id);
+
+  const handleInstall = () => {
+    const success = installApp(app);
+    if (success) setInstalled(true);
   };
 
   return (
@@ -139,12 +132,21 @@ const AppDetails = () => {
 
             {/* Install Button */}
             <div className="card-actions w-full flex justify-center lg:justify-start">
-              <button
-                onClick={handleAddToInstallList}
-                className="btn bg-green-500 hover:bg-green-600 border-none text-white text-lg font-bold px-6 h-14 rounded-lg w-full sm:w-auto"
-              >
-                Install Now ({size} MB)
-              </button>
+              {alreadyInstalled || installed ? (
+                <button
+                  disabled
+                  className="btn bg-gray-400 border-none text-white text-lg font-bold px-6 h-14 rounded-lg w-full sm:w-auto cursor-not-allowed"
+                >
+                  Installed
+                </button>
+              ) : (
+                <button
+                  onClick={handleInstall}
+                  className="btn bg-green-500 hover:bg-green-600 border-none text-white text-lg font-bold px-6 h-14 rounded-lg w-full sm:w-auto"
+                >
+                  Install Now ({size} MB)
+                </button>
+              )}
             </div>
           </div>
         </div>
