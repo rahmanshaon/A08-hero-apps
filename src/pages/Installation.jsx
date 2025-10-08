@@ -48,10 +48,10 @@ const Installation = () => {
     <div className="container mx-auto p-4 md:p-8 my-20 space-y-6">
       <div className="text-center mb-10">
         <h2 className="text-[#001931] text-4xl md:text-5xl font-bold mb-4">
-          Our All Applications
+          Your Installed Apps
         </h2>
         <p className="text-gray-500 text-lg">
-          Explore All Apps on the Market developed by us. We code for Millions
+          Explore our innovative apps, designed to make life smarter, faster, and more enjoyable.
         </p>
       </div>
 

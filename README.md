@@ -1,16 +1,18 @@
-# React + Vite
+# AppHero
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AppHero is a modern, responsive web application designed to showcase a collection of productive mobile apps. It serves as a sleek, user-friendly app marketplace interface where users can browse, search, and manage application installations. The project is built with the latest web technologies, including React 19 and Tailwind CSS, and follows best practices for component-based architecture and state management.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework**: [React 19](https://react.dev/)
+- **Bundler**: [Vite](https://vite.dev/)
+- **Styling**:
 
-## React Compiler
+  - [Tailwind CSS v4](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
+  - [DaisyUI](https://daisyui.com/) - A component library for Tailwind CSS to build beautiful interfaces faster.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Routing**: [React Router](https://reactrouter.com/)
+- **Data Fetching**: [Axios](https://axios-http.com/)
+- **Data Visualization**: [Recharts](https://recharts.org/en-US) - For creating the app review charts.
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Notifications**: [React Toastify](https://fkhadra.github.io/react-toastify/) - For user feedback on app installation / uninstallation.
