@@ -52,14 +52,6 @@ const NavLinkLists = ({ variant = "gradient" }) => {
           Installation
         </NavLink>
       </li>
-      <li className="font-medium">
-        <NavLink
-          to="/error"
-          style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}
-        >
-          Error Test
-        </NavLink>
-      </li>
     </>
   );
 };

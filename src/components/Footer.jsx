@@ -20,7 +20,7 @@ const Footer = () => {
               alt="HERO.IO Logo"
               className="w-9 h-9 md:w-12 md:h-12"
             />
-            <span className="text-white text-2xl md:text-3xl">HERO.IO</span>
+            <span className="text-white text-2xl md:text-3xl">AppHero</span>
           </Link>
 
           <ul className="menu menu-horizontal px-1 space-x-6">
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="text-center">
           <p className="text-sm">
             Copyright &copy; {new Date().getFullYear()} - All right reserved by
-            HERO.IO
+            AppHero
           </p>
         </div>
       </div>
