@@ -7,7 +7,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100 shadow-sm">
+    <div className="bg-base-100 shadow-sm sticky top-0 z-50">
       <nav className="navbar container mx-auto px-4">
         {/* Left Side: Logo */}
         <div className="navbar-start">

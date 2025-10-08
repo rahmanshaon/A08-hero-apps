@@ -3,6 +3,7 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
+  Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -23,8 +24,9 @@ const ReviewChart = ({ data }) => {
             <CartesianGrid strokeDasharray="3 3" horizontal={false} />
             <XAxis type="number" />
             <YAxis dataKey="name" type="category" width={60} />
-            <Tooltip cursor={{ fill: "rgba(240, 240, 240, 0.5)" }} />
-            <Bar dataKey="count" fill="gold" barSize={20} />
+            <Tooltip cursor={{ fill: "rgba(211, 211, 211)" }} />
+            <Legend />
+            <Bar dataKey="count" fill="#FF8811" barSize={20} />
           </BarChart>
         </ResponsiveContainer>
       </div>

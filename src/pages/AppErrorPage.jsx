@@ -4,7 +4,7 @@ import AppErrorImg from "../assets/App-Error.png";
 
 const AppErrorPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center py-16 px-4">
+    <div className="flex flex-col items-center justify-center text-center py-16 px-8">
       <img
         src={AppErrorImg}
         alt="App Not Found"
@@ -22,7 +22,7 @@ const AppErrorPage = () => {
 
       <Link
         to="/apps"
-        className="btn mt-8 text-white border-none font-semibold shadow-md hover:shadow-lg transition-all duration-300"
+        className="btn mt-8 px-10 text-lg text-white border-none font-semibold shadow-md hover:shadow-lg transition-all duration-300"
         style={{
           background: "linear-gradient(125deg, #632EE3 5.68%, #9F62F2 88.38%)",
         }}

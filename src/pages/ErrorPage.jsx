@@ -25,10 +25,10 @@ const ErrorPage = () => {
         {loading ? (
           <LoadingSpinner />
         ) : status === 404 ? (
-          <div className="flex flex-col items-center text-center px-4">
+          <div className="flex flex-col items-center text-center px-8">
             <img src={ErrorImg404} alt="" className="w-full max-w-md mb-8" />
 
-            <h1 className="text-4xl md:text-5xl font-bold text-[#111827]">
+            <h1 className="text-4xl md:text-5xl font-semibold text-gray-800">
               Oops, page not found!
             </h1>
 
@@ -38,7 +38,7 @@ const ErrorPage = () => {
 
             <Link
               to="/"
-              className="btn mt-8 text-white border-none"
+              className="btn mt-8 px-10 text-white text-lg border-none"
               style={{
                 background:
                   "linear-gradient(125deg, #632EE3 5.68%, #9F62F2 88.38%)",

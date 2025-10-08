@@ -6,9 +6,7 @@ import LoadingSpinner from "./LoadingSpinner";
 
 const TrendingApps = () => {
   const { apps, loading, error } = useApps();
-  //   console.log(data);
   const featuredApps = apps.slice(0, 8);
-  //   console.log(apps);
 
   // Loading state
   if (loading) {
@@ -25,10 +23,11 @@ const TrendingApps = () => {
       </div>
     );
   }
+
   return (
-    <div className="container mx-auto p-4 md:p-8 lg:p-12">
-      <div className="text-center my-12">
-        <h2 className="text-[#001931] text-4xl font-bold mb-4">
+    <div className="container mx-auto mt-20 p-4 md:p-8">
+      <div className="text-center mb-10">
+        <h2 className="text-[#001931] text-4xl md:text-5xl font-bold mb-4">
           Trending Apps
         </h2>
         <p className="text-gray-500 text-lg">
@@ -40,7 +39,7 @@ const TrendingApps = () => {
           <AppCard key={app.id} app={app} />
         ))}
       </div>
-      <div className="flex justify-center items-center mt-12">
+      <div className="flex justify-center items-center mt-10 mb-20">
         <Link
           to="/apps"
           className="btn text-white bg-[linear-gradient(125deg,#632EE3_5.68%,#9F62F2_88.38%)] hover:bg-[linear-gradient(125deg,#9F62F2_5.68%,#632EE3_88.38%)] transition ease-in-out"

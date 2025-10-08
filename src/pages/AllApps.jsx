@@ -29,9 +29,9 @@ const AllApps = () => {
   }
 
   return (
-    <div className="container mx-auto p-4 md:p-8 lg:p-12 mb-12">
-      <div className="text-center my-8">
-        <h2 className="text-[#001931] text-4xl font-bold mb-4">
+    <div className="container mx-auto p-4 md:p-8 my-20">
+      <div className="text-center mb-10">
+        <h2 className="text-[#001931] text-4xl md:text-5xl font-bold mb-4">
           Our All Applications
         </h2>
         <p className="text-gray-500 text-lg">
@@ -39,11 +39,11 @@ const AllApps = () => {
         </p>
       </div>
       <div className="flex flex-col gap-5 md:flex-row justify-between py-5 items-center">
-        <h3 className="text-2xl font-semibold">
+        <h3 className="text-xl md:text-2xl font-semibold">
           ({searchedApps.length}) Apps Found
         </h3>
 
-        <label className="input w-[400px] rounded-lg">
+        <label className="input md:w-[400px] rounded-lg">
           <span className="label">
             <FaSearch />
           </span>
