@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import Footer from "../components/Footer";
 import { ToastContainer } from "react-toastify";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const MainLayout = () => {
+const location = useLocation();
+  const [navigating, setNavigating] = React.useState(false);
+
+  useEffect(() => {
+    setNavigating(true);
+    const t = setTimeout(() => setNavigating(false), 500);
+    return () => clearTimeout(t);
+  }, [location.pathname]);
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      {/* <main className="container mx-auto w-full p-4 md:p-8 lg:p-12 flex-1"> */}
-        <Outlet />
-      {/* </main> */}
+      <main className="flex-1">
+        {navigating ? <LoadingSpinner /> : <Outlet />}
+      </main>
       <Footer />
       <ToastContainer />
     </div>

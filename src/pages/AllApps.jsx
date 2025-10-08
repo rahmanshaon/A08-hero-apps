@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useApps from "../hooks/useApps";
 import AppCard from "../components/AppCard";
 import { FaSearch } from "react-icons/fa";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const AllApps = () => {
   const { apps, loading, error } = useApps();
@@ -14,11 +15,7 @@ const AllApps = () => {
     : apps;
 
   if (loading) {
-    return (
-      <div className="flex justify-center items-center h-[60vh]">
-        <p className="text-lg text-gray-500 animate-pulse">Loading apps...</p>
-      </div>
-    );
+    return <LoadingSpinner message="Loading all apps..." />;
   }
 
   if (error) {

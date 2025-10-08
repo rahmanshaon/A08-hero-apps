@@ -9,22 +9,14 @@ import ReviewChart from "../components/ReviewChart";
 import { installApp, isAppInstalled } from "../utils/localStorage";
 import AppErrorPage from "./AppErrorPage";
 import AppDetailsCard from "../components/AppDetailsCard";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading, error } = useApps();
 
   if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="flex flex-col items-center gap-4">
-          <span className="loading loading-spinner loading-lg text-primary"></span>
-          <p className="text-gray-500 text-lg font-medium">
-            Loading app details...
-          </p>
-        </div>
-      </div>
-    );
+    return <LoadingSpinner message="Loading app details..." />;
   }
 
   if (error) {

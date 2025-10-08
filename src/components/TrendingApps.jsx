@@ -2,6 +2,7 @@ import React from "react";
 import useApps from "../hooks/useApps";
 import { Link } from "react-router";
 import AppCard from "./AppCard";
+import LoadingSpinner from "./LoadingSpinner";
 
 const TrendingApps = () => {
   const { apps, loading, error } = useApps();
@@ -11,13 +12,7 @@ const TrendingApps = () => {
 
   // Loading state
   if (loading) {
-    return (
-      <div className="flex justify-center items-center h-[60vh]">
-        <p className="text-lg text-gray-500 animate-pulse">
-          Loading trending apps...
-        </p>
-      </div>
-    );
+    return <LoadingSpinner message="Loading trending apps..." />;
   }
 
   // Error state

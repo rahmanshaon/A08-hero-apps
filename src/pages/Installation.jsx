@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi";
 import { formatCompactNumber } from "../utils/formatters";
 import { loadInstalledApps, uninstallApp } from "../utils/localStorage";
 import useApps from "../hooks/useApps";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const Installation = () => {
   const { apps, loading, error } = useApps();
@@ -32,16 +33,7 @@ const Installation = () => {
   }, [installedApps, sortOrder]);
 
   if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="flex flex-col items-center gap-4">
-          <span className="loading loading-spinner loading-lg text-primary"></span>
-          <p className="text-gray-500 text-lg font-medium">
-            Loading installed apps...
-          </p>
-        </div>
-      </div>
-    );
+    return <LoadingSpinner message="Loading installed apps..." />;
   }
 
   if (error) {

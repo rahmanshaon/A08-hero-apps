@@ -6,12 +6,33 @@ const useApps = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  //   useEffect(() => {
+  //     setLoading(true);
+  //     axios("/appsData.json")
+  //       .then((data) => setApps(data.data))
+  //       .catch((err) => setError(err))
+  //       .finally(() => setLoading(false));
+  //   }, []);
+
+  //   return { apps, loading, error };
+  // };
+
   useEffect(() => {
     setLoading(true);
-    axios("/appsData.json")
-      .then((data) => setApps(data.data))
-      .catch((err) => setError(err))
-      .finally(() => setLoading(false));
+
+    const fetchData = async () => {
+      try {
+        const response = await axios("/appsData.json");
+        await new Promise((resolve) => setTimeout(resolve, 300));
+        setApps(response.data);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return { apps, loading, error };

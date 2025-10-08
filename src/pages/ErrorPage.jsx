@@ -1,20 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useRouteError } from "react-router";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ErrorImg404 from "../assets/error-404.png";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const ErrorPage = () => {
   const error = useRouteError();
   const message = error?.statusText || error?.message;
   const status = error?.status;
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
 
       <div className="py-20">
-        {status === 404 ? (
-          <div className="flex-grow flex flex-col items-center justify-center text-center px-4">
+        {loading ? (
+          <LoadingSpinner />
+        ) : status === 404 ? (
+          <div className="flex flex-col items-center text-center px-4">
             <img src={ErrorImg404} alt="" className="w-full max-w-md mb-8" />
 
             <h1 className="text-4xl md:text-5xl font-bold text-[#111827]">
@@ -37,7 +48,7 @@ const ErrorPage = () => {
             </Link>
           </div>
         ) : (
-          <div className="flex-1 flex flex-col items-center justify-center text-center px-4">
+          <div className="flex flex-col items-center text-center px-4">
             <h1 className="text-7xl font-extrabold text-gray-800 mb-4">
               {status || "Error"}
             </h1>
