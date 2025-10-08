@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-const AppDetailsErrorPage = ({ message = "App not found." }) => {
+const AppErrorPage = ({ message = "App not found." }) => {
   return (
     <div className="flex flex-col items-center justify-center h-[30vh] text-center p-6">
       <h1 className="text-6xl font-extrabold text-purple-600 mb-4">404</h1>
@@ -16,4 +16,4 @@ const AppDetailsErrorPage = ({ message = "App not found." }) => {
   );
 };
 
-export default AppDetailsErrorPage;
+export default AppErrorPage;

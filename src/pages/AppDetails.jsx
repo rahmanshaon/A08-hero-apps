@@ -5,9 +5,9 @@ import { FaStar } from "react-icons/fa";
 import { BsFillChatSquareTextFill } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 import { formatCompactNumber } from "../utils/formatters";
-import AppDetailsErrorPage from "./AppDetailsErrorPage";
 import ReviewChart from "../components/ReviewChart";
 import { installApp, isAppInstalled } from "../utils/localStorage";
+import AppErrorPage from "./AppErrorPage";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -30,19 +30,19 @@ const AppDetails = () => {
 
   if (error) {
     return (
-      <AppDetailsErrorPage message="Something went wrong while fetching app data." />
+      <AppErrorPage message="Something went wrong while fetching app data." />
     );
   }
 
   const numericId = Number(id);
 
   if (isNaN(numericId)) {
-    return <AppDetailsErrorPage message="Invalid app ID." />;
+    return <AppErrorPage message="Invalid app ID." />;
   }
 
   const app = apps.find((a) => a.id === numericId);
   if (!app) {
-    return <AppDetailsErrorPage message="App not found." />;
+    return <AppErrorPage message="App not found." />;
   }
 
   const {
