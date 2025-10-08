@@ -6,6 +6,7 @@ import { BsFillChatSquareTextFill } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 import { formatCompactNumber } from "../utils/formatters";
 import AppDetailsErrorPage from "./AppDetailsErrorPage";
+import ReviewChart from "../components/ReviewChart";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -15,13 +16,17 @@ const AppDetails = () => {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-96">
-        <p className="text-lg font-semibold text-gray-500">Loading app details...</p>
+        <p className="text-lg font-semibold text-gray-500">
+          Loading app details...
+        </p>
       </div>
     );
   }
 
   if (error) {
-    return <AppDetailsErrorPage message="Something went wrong while fetching app data." />;
+    return (
+      <AppDetailsErrorPage message="Something went wrong while fetching app data." />
+    );
   }
 
   const numericId = Number(id);
@@ -44,6 +49,7 @@ const AppDetails = () => {
     size,
     reviews,
     description,
+    ratings,
   } = app || {};
 
   return (
@@ -129,6 +135,9 @@ const AppDetails = () => {
         <h2 className="text-3xl font-bold mb-4 text-gray-800 text-center lg:text-left">
           Ratings
         </h2>
+        <div>
+          <ReviewChart data={ratings} />
+        </div>
       </div>
 
       {/* Divider */}
