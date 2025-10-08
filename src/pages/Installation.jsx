@@ -2,22 +2,26 @@ import React, { useEffect, useState } from "react";
 import { FaStar, FaTrash } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { formatCompactNumber } from "../utils/formatters";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const [appList, setAppList] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const savedList = JSON.parse(localStorage.getItem("appList"));
     if (savedList) setAppList(savedList);
+    setLoading(false);
   }, []);
 
-  if (!appList.length)
-    return (
-      <p className="flex items-center justify-center text-3xl font-semibold text-red-600 min-h-[50vh]">
-        No data Available
-      </p>
-    );
+  const handleUninstall = (id) => {
+    const existingList = JSON.parse(localStorage.getItem("appList"));
+    let updatedList = existingList.filter((a) => a.id !== id);
+    setAppList(updatedList);
+    localStorage.setItem("appList", JSON.stringify(updatedList));
+    toast.success("App uninstalled successfully");
+  };
 
   const sortedItem = (() => {
     if (sortOrder === "size-asc") {
@@ -28,6 +32,23 @@ const Installation = () => {
       return appList;
     }
   })();
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-96">
+        <p className="text-lg font-semibold text-gray-500 animate-pulse">
+          Loading installed apps...
+        </p>
+      </div>
+    );
+  }
+
+  if (!appList.length)
+    return (
+      <p className="flex items-center justify-center text-3xl font-semibold text-red-600 min-h-[50vh]">
+        No apps installed yet
+      </p>
+    );
 
   return (
     <div className="space-y-6">
@@ -78,7 +99,10 @@ const Installation = () => {
 
             {/* Uninstall Button */}
             <div className="card-actions">
-              <button className="btn bg-[#20c997] hover:bg-[#1baa80] text-white border-none">
+              <button
+                onClick={() => handleUninstall(a.id)}
+                className="btn bg-[#20c997] hover:bg-[#1baa80] text-white border-none"
+              >
                 <FaTrash className="mr-2" />
                 Uninstall
               </button>

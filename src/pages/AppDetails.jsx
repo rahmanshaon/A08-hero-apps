@@ -55,7 +55,7 @@ const AppDetails = () => {
 
   const handleAddToInstallList = () => {
     const existingList = JSON.parse(localStorage.getItem("appList"));
-    console.log(existingList);
+    // console.log(existingList);
     let updatedList = [];
     if (existingList) {
       const isDuplicate = existingList.some((a) => a.id === app.id);
