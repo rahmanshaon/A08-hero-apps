@@ -32,7 +32,7 @@ const AllApps = () => {
   }
 
   return (
-    <div className="mb-12">
+    <div className="container mx-auto p-4 md:p-8 lg:p-12 mb-12">
       <div className="text-center my-8">
         <h2 className="text-[#001931] text-4xl font-bold mb-4">
           Our All Applications

@@ -4,9 +4,9 @@ import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { Link } from "react-router";
 import HeroImg from "../assets/hero.png";
 
-const Banner = () => {
+const HeroBanner = () => {
   return (
-    <div className="container mx-auto px-4 py-20 md:py-32">
+    <div className="container mx-auto px-4 pt-20 md:pt-32">
       <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
@@ -31,7 +31,7 @@ const Banner = () => {
           <Link
             to="https://play.google.com"
             target="_blank"
-            className="flex items-center justify-center gap-3 w-48 px-4 py-3 border border-gray-600 rounded-lg hover:bg-gray-900 transition-colors duration-300"
+            className="flex items-center justify-center gap-3 w-48 px-4 py-3 border border-gray-600 rounded-lg"
           >
             <IoLogoGooglePlaystore className="w-7 h-7" />
             <span className="text-lg font-medium">Google Play</span>
@@ -41,13 +41,13 @@ const Banner = () => {
           <Link
             to="https://www.apple.com/app-store/"
             target="_blank"
-            className="flex items-center justify-center gap-3 w-48 px-4 py-3 border border-gray-600 rounded-lg hover:bg-gray-900 transition-colors duration-300"
+            className="flex items-center justify-center gap-3 w-48 px-4 py-3 border border-gray-600 rounded-lg"
           >
             <FaApple className="w-7 h-7" />
             <span className="text-lg font-medium">App Store</span>
           </Link>
         </div>
-        <div className="py-14 flex justify-center items-center">
+        <div className="pt-14 flex justify-center items-center">
             <img src={HeroImg} alt="" />
         </div>
       </div>
@@ -55,4 +55,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default HeroBanner;
