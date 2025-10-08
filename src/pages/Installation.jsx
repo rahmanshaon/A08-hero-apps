@@ -52,13 +52,13 @@ const Installation = () => {
     );
   }
 
-  if (!sortedApps.length) {
-    return (
-      <p className="flex items-center justify-center text-3xl font-semibold text-red-600 min-h-[50vh]">
-        No apps installed yet
-      </p>
-    );
-  }
+  // if (!sortedApps.length) {
+  //   return (
+  //     <p className="flex items-center justify-center text-3xl font-semibold text-red-600 min-h-[50vh]">
+  //       No apps installed yet
+  //     </p>
+  //   );
+  // }
 
   return (
     <div className="space-y-6">

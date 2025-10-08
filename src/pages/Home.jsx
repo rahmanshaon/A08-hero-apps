@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import AppCard from "../components/AppCard";
 import useApps from "../hooks/useApps";
+import Banner from "../components/Banner";
 
 const Home = () => {
   const { apps, loading, error } = useApps();
@@ -33,6 +34,7 @@ const Home = () => {
 
   return (
     <div>
+      <Banner />
       <div className="text-center my-12">
         <h2 className="text-[#001931] text-4xl font-bold mb-4">
           Trending Apps
