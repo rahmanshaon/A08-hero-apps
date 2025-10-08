@@ -7,6 +7,7 @@ import { FiDownload } from "react-icons/fi";
 import { formatCompactNumber } from "../utils/formatters";
 import AppDetailsErrorPage from "./AppDetailsErrorPage";
 import ReviewChart from "../components/ReviewChart";
+import { toast } from "react-toastify";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -51,6 +52,24 @@ const AppDetails = () => {
     description,
     ratings,
   } = app || {};
+
+  const handleAddToInstallList = () => {
+    const existingList = JSON.parse(localStorage.getItem("appList"));
+    console.log(existingList);
+    let updatedList = [];
+    if (existingList) {
+      const isDuplicate = existingList.some((a) => a.id === app.id);
+      if (isDuplicate) {
+        toast.warning("This app is already installed!");
+        return;
+      }
+      updatedList = [...existingList, app];
+    } else {
+      updatedList.push(app);
+    }
+    localStorage.setItem("appList", JSON.stringify(updatedList));
+    toast.success("App installed successfully");
+  };
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -120,7 +139,10 @@ const AppDetails = () => {
 
             {/* Install Button */}
             <div className="card-actions w-full flex justify-center lg:justify-start">
-              <button className="btn bg-green-500 hover:bg-green-600 border-none text-white text-lg font-bold px-6 h-14 rounded-lg w-full sm:w-auto">
+              <button
+                onClick={handleAddToInstallList}
+                className="btn bg-green-500 hover:bg-green-600 border-none text-white text-lg font-bold px-6 h-14 rounded-lg w-full sm:w-auto"
+              >
                 Install Now ({size} MB)
               </button>
             </div>
