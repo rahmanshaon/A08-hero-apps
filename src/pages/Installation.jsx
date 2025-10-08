@@ -5,6 +5,7 @@ import { formatCompactNumber } from "../utils/formatters";
 
 const Installation = () => {
   const [appList, setAppList] = useState([]);
+  const [sortOrder, setSortOrder] = useState("none");
 
   useEffect(() => {
     const savedList = JSON.parse(localStorage.getItem("appList"));
@@ -18,6 +19,16 @@ const Installation = () => {
       </p>
     );
 
+  const sortedItem = (() => {
+    if (sortOrder === "size-asc") {
+      return [...appList].sort((a, b) => a.size - b.size);
+    } else if (sortOrder === "size-desc") {
+      return [...appList].sort((a, b) => b.size - a.size);
+    } else {
+      return appList;
+    }
+  })();
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col gap-5 md:flex-row justify-between py-5 items-center">
@@ -25,11 +36,21 @@ const Installation = () => {
           ({appList.length}) Apps Found
         </h3>
 
-        <button>Sort</button>
+        <label className="w-full max-w-xs">
+          <select
+            className="select border-gray-800"
+            value={sortOrder}
+            onChange={(e) => setSortOrder(e.target.value)}
+          >
+            <option value="none">Sort by Size</option>
+            <option value="size-asc">Low -&gt; High</option>
+            <option value="size-desc">High -&gt; low</option>
+          </select>
+        </label>
       </div>
 
       <div className="space-y-3">
-        {appList.map((a) => (
+        {sortedItem.map((a) => (
           <div
             key={a.id}
             className="card card-side bg-base-100 shadow-md p-4 flex-col sm:flex-row items-center space-y-4 sm:space-y-0"
