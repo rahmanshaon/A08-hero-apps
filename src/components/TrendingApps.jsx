@@ -42,7 +42,7 @@ const TrendingApps = () => {
       <div className="flex justify-center items-center mt-10 mb-20">
         <Link
           to="/apps"
-          className="btn text-white bg-[linear-gradient(125deg,#632EE3_5.68%,#9F62F2_88.38%)] hover:bg-[linear-gradient(125deg,#9F62F2_5.68%,#632EE3_88.38%)] transition ease-in-out"
+          className="btn text-white bg-[linear-gradient(125deg,#632EE3_5.68%,#9F62F2_88.38%)] hover:bg-[linear-gradient(125deg,#9F62F2_5.68%,#632EE3_88.38%)] transition ease-in-out px-10"
         >
           Show All Apps
         </Link>

@@ -20,7 +20,7 @@ const HeroBanner = () => {
 
         {/* Subheading */}
         <p className="mt-4 px-4 md:px-12 text-gray-600 leading-relaxed">
-          At HERO.IO, we craft innovative apps designed to make everyday life
+          At AppHero, we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting. Our goal is to turn your ideas
           into digital experiences that truly make an impact.
         </p>
@@ -31,7 +31,7 @@ const HeroBanner = () => {
           <Link
             to="https://play.google.com"
             target="_blank"
-            className="flex items-center justify-center gap-3 w-48 px-4 py-3 border border-gray-300 rounded-lg"
+            className="flex items-center justify-center gap-3 w-48 px-4 py-3 border border-gray-300 rounded-lg hover:shadow-lg"
           >
             <img src={PlayStoreImg} alt="" className="w-7 h-7" />
             <span className="text-lg md:text-xl font-semibold">
@@ -43,7 +43,7 @@ const HeroBanner = () => {
           <Link
             to="https://www.apple.com/app-store/"
             target="_blank"
-            className="flex items-center justify-center gap-3 w-48 px-4 py-3 border border-gray-300 rounded-lg"
+            className="flex items-center justify-center gap-3 w-48 px-4 py-3 border border-gray-300 rounded-lg hover:shadow-lg"
           >
             <img src={AppStoreImg} alt="" className="w-7 h-7" />
             <span className="text-lg md:text-xl font-semibold">App Store</span>
