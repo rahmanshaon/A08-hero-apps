@@ -42,9 +42,9 @@ const AllApps = () => {
         </p>
       </div>
       <div className="flex flex-col gap-5 md:flex-row justify-between py-5 items-center">
-        <h1 className="text-2xl font-semibold">
+        <h3 className="text-2xl font-semibold">
           ({searchedApps.length}) Apps Found
-        </h1>
+        </h3>
 
         <label className="input w-[400px] rounded-lg">
           <span className="label">
